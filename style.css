@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+    font-size: 2vmin;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #121111;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 8vmin;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    z-index: 100;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style: none;
+}
+
+header ul li{
+    font-size: 1.3rem;
+    margin: 3vmin;
+}
+
+header img.logo{
+    height: 5vmin;
+}
+
+header button{
+    border: none;
+    background-color: #121111;
+    left: 0;
+}
+
+header button ion-icon{
+    height: 6vmin;
+    width: 6vmin;
+    color: white;
+}
+
+.border{
+    position: absolute;
+    width: 100%;
+    height: 0.5vmin;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(1,225,255,1) 0%, rgba(139,255,172,1) 100%);
+}
+
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121111;
+    color: white;
+}
+
+.hero h1{
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+.hero h4{
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-left: 0.8vmin;
+    top: -3vmin;
+}
+
+.hero p{
+    position: relative;
+    right: 13vmin;
+    top: 10vmin;
+    font-size: 1.6rem;
+}
+
+
+
+.usefull{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usefull h2{
+    font-size: 4rem;
+    color: white;
+    background-color: #121111;
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.usefull-box{
+    height: 70vmin;
+    width: 120vmin;
+    border: 2vmin solid #121111;
+    background: linear-gradient(45deg, rgba(179,162,239,1) 0%, rgba(255,255,255,0) 100%),
+    linear-gradient(315deg, rgba(255,164,209,1) 0%, rgba(255,255,255,0) 100%),
+    linear-gradient(235deg, rgba(255,168,0,1) 0%, rgba(255,255,255,0) 100%),
+    linear-gradient(125deg, rgba(160,255,218,1) 0%, rgba(255,255,255,0) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.usefull-box div.item{
+    height: 25vmin;
+    width: 45vmin;
+    color: white;
+    background-color: #121111;
+    border: 0.5vmin solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.usefull-box div h3{
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-bottom: 0.5vmin solid white;
+    padding-left: 1vmin;
+}
+
+.usefull-box .links a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 1vmin;
+}
