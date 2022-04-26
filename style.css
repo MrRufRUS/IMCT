@@ -100,8 +100,7 @@ header .border {
 
 /* Usefull */
 .usefull {
-    height: 100vh;
-    min-height: 800px;
+    margin: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,14 +120,19 @@ header .border {
         linear-gradient(235deg, rgba(255, 168, 0, 1) 0%, rgba(255, 255, 255, 0) 100%),
         linear-gradient(125deg, rgba(160, 255, 218, 1) 0%, rgba(255, 255, 255, 0) 100%);
     border: 5px solid black;
-    min-width: 40vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usefull .row1, .row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .usefull .item {
-    width: 40%;
-    margin: 5%;
+    margin: 30px;
     border: 3px solid white;
     background-color: #121111;
 }
@@ -154,46 +158,51 @@ header .border {
 }
 
 @media (max-width: 1200px) {
-    * {
-        font-size: 14px;
+    
+}
+
+@media (max-width: 1024px) {
+    header a{
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 768px) {
-    header ul {
-        display: none;
+    *{
+        font-size: 14px;
     }
+    header ul{
+       display: none;
+    }
+
+   .usefull-box .item{
+       margin: 15px;
+   }
+
+   .usefull .usefull-content{
+       width: 100%;
+   }
 }
 
-@media (max-width: 480px) {
-    * {
+@media (max-width: 480px){
+    *{
         font-size: 12px;
     }
 
-    header{
-        height: 40px;
+    .usefull{
+        margin: 19px 3px;
     }
 
-    header .border{
-        height: 3px;
+    .usefull-box .row1, .row2{
+        flex-direction: column;
     }
 
-    .hero{
-        height: 70vh;
+    .usefull-box .item{
+        width: 90%;
     }
 
     .hero span{
-        transform: translate(0, 0);
-    }
-
-    .usefull .usefull-box{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        min-width: 80vw;
-    }
-
-    .usefull .item{
-        min-width: 60vw;
+        transform: translate(0,0);
     }
 }
 
