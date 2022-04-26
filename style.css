@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 
 /* Header */
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,26 +21,26 @@ header{
     color: white;
 }
 
-header .logo{
+header .logo {
     width: 60px;
     margin-left: 20px;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
 }
 
-header ul li{
+header ul li {
     margin: 0 10px;
 }
 
-header a{
+header a {
     color: white;
     text-decoration: none;
 }
 
-header button{
+header button {
     height: 40px;
     width: 40px;
     background-color: #121111;
@@ -49,21 +49,21 @@ header button{
     margin-right: 20px;
 }
 
-header ion-icon{
+header ion-icon {
     width: 100%;
     height: 100%;
 }
 
-header .border{
+header .border {
     position: absolute;
     width: 100%;
     height: 5px;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(1,225,255,1) 0%, rgba(139,255,172,1) 100%);
+    background: linear-gradient(90deg, rgba(1, 225, 255, 1) 0%, rgba(139, 255, 172, 1) 100%);
 }
 
 /* Hero */
-.hero{
+.hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -73,25 +73,25 @@ header .border{
     color: white;
 }
 
-.hero .hero-content{
+.hero .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 70%;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 10rem;
     font-weight: 600;
 }
 
-.hero h4{
+.hero h4 {
     font-size: 1.3rem;
     padding-left: 8px;
     margin-top: -30px;
 }
 
-.hero span{
+.hero span {
     display: block;
     font-size: 1.3rem;
     width: fit-content;
@@ -99,56 +99,106 @@ header .border{
 }
 
 /* Usefull */
-.usefull{
+.usefull {
     height: 100vh;
-    min-height: 600px;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
 
-.usefull h2{
+.usefull h2 {
     font-size: 3rem;
     background-color: #121111;
     width: fit-content;
     font-weight: 600;
 }
 
-.usefull .usefull-box{
-    background: linear-gradient(45deg, rgba(179,162,239,1) 0%, rgba(255,255,255,0) 100%),
-    linear-gradient(315deg, rgba(255,164,209,1) 0%, rgba(255,255,255,0) 100%),
-    linear-gradient(235deg, rgba(255,168,0,1) 0%, rgba(255,255,255,0) 100%),
-    linear-gradient(125deg, rgba(160,255,218,1) 0%, rgba(255,255,255,0) 100%);
+.usefull .usefull-box {
+    background: linear-gradient(45deg, rgba(179, 162, 239, 1) 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(315deg, rgba(255, 164, 209, 1) 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(235deg, rgba(255, 168, 0, 1) 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(125deg, rgba(160, 255, 218, 1) 0%, rgba(255, 255, 255, 0) 100%);
     border: 5px solid black;
     min-width: 40vw;
     display: flex;
     flex-wrap: wrap;
 }
 
-.usefull .item{
+.usefull .item {
     width: 40%;
     margin: 5%;
     border: 3px solid white;
     background-color: #121111;
 }
 
-.usefull h3{
+.usefull h3 {
     font-size: 1.5rem;
     font-weight: 600;
     border-bottom: 2px solid white;
     padding: 1%;
 }
 
-.usefull .item .links{
+.usefull .item .links {
     padding: 4% 4%;
     display: flex;
     flex-direction: column;
 }
 
-.usefull a{
+.usefull a {
     margin: 2% 0;
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+
+    header{
+        height: 40px;
+    }
+
+    header .border{
+        height: 3px;
+    }
+
+    .hero{
+        height: 70vh;
+    }
+
+    .hero span{
+        transform: translate(0, 0);
+    }
+
+    .usefull .usefull-box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-width: 80vw;
+    }
+
+    .usefull .item{
+        min-width: 60vw;
+    }
+}
+
+@media (max-width: 320px){
+    *{
+        font-size: 10px;
+    }
 }
