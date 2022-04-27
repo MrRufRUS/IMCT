@@ -83,40 +83,51 @@
     </section>
     <section class="news">
         <h2>Что нового</h2>
-        <div class="news-content">
-            <div class="news-item">
-                <div class="news-image">
-                    <img src="assets/news.png" alt="">
+        <div class="news-wrapper">
+            <div class="news-content">
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="assets/news.png" alt="">
+                    </div>
+                    <div class="news-item-text">
+                        <h4>Новость дня</h4>
+                        <p>Сегодня произошло такое, вы с ума сойдете</p>
+                    </div>
                 </div>
-                <div class="news-item-text">
-                    <h4>Новость дня</h4>
-                    <p>Сегодня произошло такое, вы с ума сойдете</p>
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="assets/news.png" alt="">
+                    </div>
+                    <div class="news-item-text">
+                        <h4>Новость дня</h4>
+                        <p>Сегодня произошло такое, вы с ума сойдете</p>
+                    </div>
                 </div>
-            </div>
-            <div class="news-item">
-                <div class="news-image">
-                    <img src="assets/news.png" alt="">
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="assets/news.png" alt="">
+                    </div>
+                    <div class="news-item-text">
+                        <h4>Новость дня</h4>
+                        <p>Сегодня произошло такое, вы с ума сойдете</p>
+                    </div>
                 </div>
-                <div class="news-item-text">
-                    <h4>Новость дня</h4>
-                    <p>Сегодня произошло такое, вы с ума сойдете</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-image">
-                    <img src="assets/news.png" alt="">
-                </div>
-                <div class="news-item-text">
-                    <h4>Новость дня</h4>
-                    <p>Сегодня произошло такое, вы с ума сойдете</p>
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="assets/news.png" alt="">
+                    </div>
+                    <div class="news-item-text">
+                        <h4>Новость дня</h4>
+                        <p>Сегодня произошло такое, вы с ума сойдете</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="news-nav">
-            <button>
+            <button onclick="ScrollLeft()">
                 <ion-icon name="arrow-back"></ion-icon>
             </button>
-            <button>
+            <button onclick="ScrollRight()">
                 <ion-icon name="arrow-forward"></ion-icon>
             </button>
         </div>
@@ -185,6 +196,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="news.js"></script>
 </body>
 
 </html>
