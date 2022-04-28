@@ -274,7 +274,7 @@ header .border {
     margin: 0 200px;
     align-items: center;
     justify-content: space-between;
-    height: 470px;
+    /* height: 470px; */
 }
 .projects h2 {
     margin-left: 200px;
@@ -284,7 +284,7 @@ header .border {
     display: block;
     width: fit-content;
     font-weight: 600;
-    /* margin: 30px; */
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 .projects-small {
@@ -292,7 +292,7 @@ header .border {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    /* justify-content: space-between; */
+    justify-content: center;
 }
 .project-small-item {
     width: 300px;
@@ -378,14 +378,14 @@ header .border {
     
 }
 .projects-btn {
-    height: 76px;
+    width: fit-content;
     display: flex;
     align-items: center;
     background-color: #121111;
     color: white;
     margin-top: 60px;
     margin-left: auto;
-    margin-right: 200px;
+    margin-right: 30px;
 }
 .projects-btn span, .projects-btn ion-icon {
     color: white;
@@ -477,6 +477,12 @@ footer {
     color: #FFFFFF;
     
 }
+
+@media (max-width:1640px){
+    .projects-big{
+        display: none;
+    }
+}
 @media (max-width: 1200px) {}
 
 @media (max-width: 1024px) {
@@ -500,6 +506,12 @@ footer {
 
     .usefull .usefull-content {
         width: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    .projects-btn span{
+        font-size: 3rem;
     }
 }
 
