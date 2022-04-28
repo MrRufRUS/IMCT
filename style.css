@@ -394,6 +394,89 @@ header .border {
     font-size: 57.5573px;
     line-height: 76px;
 }
+.partners {
+    background: #121111;
+}
+.partner {
+    width: 275px;
+    height: 324px;
+    position: relative;
+    margin: 0 75px;
+}
+.partner::before {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-color: #FFA800;
+    display: block;
+    position: absolute;
+    bottom: 330px;
+}
+.partners-container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.partners-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 260px;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.partners-title {
+    font-weight: 500;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.partner h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 50px;
+    
+    color: #FFFFFF;
+}
+.partner p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: -0.08em;
+    
+    color: #FFFFFF;
+    
+}
+footer {
+    display: flex;
+    background: #121111;
+    height: 100px;
+    align-items: center;
+}
+.social {
+    display: flex;
+    margin-left: 219px;
+    gap: 50px;
+}
+.social *{
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.phone {
+    margin-left: auto;
+    margin-right: 130px;
+}
+.phone span {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 41px;
+    
+    color: #FFFFFF;
+    
+}
 @media (max-width: 1200px) {}
 
 @media (max-width: 1024px) {
