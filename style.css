@@ -271,10 +271,11 @@ header .border {
 }
 .projects-box {
     display: flex;
-    margin: 0 200px;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     /* height: 470px; */
+    flex-direction: column;
 }
 .projects h2 {
     margin-left: 200px;
@@ -299,6 +300,9 @@ header .border {
     height: 180px;
     position: relative;
 }
+.project-small-item.smaller-big{
+    display: none;
+}
 .project-small-item h4 {
     position: absolute;
     top: 116px;
@@ -318,15 +322,18 @@ header .border {
     border: #ffffff solid 5px;
     
     background: white;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .project-small-item::after {
     content: "";
-	display: block;    
-	width: 100%;
-	height: 100%;    
+	display: block;  
 	position: absolute;
 	top: 5px;      
-	left: 5px;   
+	left: 5px;
+    bottom: 5px;
+    right: 5px;   
     background: linear-gradient(179.58deg, rgba(250, 146, 148, 0.1) -16.28%, rgba(57, 39, 63, 0.5) 87.35%);
 }
 .projects-big {
@@ -335,6 +342,7 @@ header .border {
     width: 600px;
     border: #ffffff solid 20px;
     /* border-radius: 20px !important; */
+    margin-top: 50px;
 }
 .projects-big-img {
     
@@ -482,7 +490,7 @@ footer {
 
 @media (max-width:1640px){
     .projects-big{
-        display: none;
+        
     }
 }
 @media (max-width: 1200px) {
@@ -518,6 +526,14 @@ footer {
         width: 100%;
     }
 
+    .news .news-item{
+        margin: 10px;
+    }
+
+    .news img{
+        width: 90vw;
+    }
+
     footer{
         display: flex;
         flex-direction: column;
@@ -534,7 +550,26 @@ footer {
 
 @media(max-width: 700px){
     .projects-btn span{
-        font-size: 3rem;
+        font-size: 2.7rem;
+    }
+
+    .projects-small{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .project-small-item.smaller-big{
+        display: block;
+    }
+
+    .projects-big{
+        display: none;
+    }
+    
+    .projects h2{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -559,10 +594,22 @@ footer {
     .hero span {
         transform: translate(0, 0);
     }
+
+    .news-item-text{
+        padding: 15px 10px;
+    }
+
+    .partner{
+        margin: 0 auto;
+    }
+
+    .projects-btn{
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 320px) {
     * {
-        font-size: 10px;
+        /* font-size: 10px; */
     }
 }
