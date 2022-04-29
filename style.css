@@ -433,6 +433,7 @@ header .border {
     font-size: 5rem;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 15px;
 }
 .partner h4 {
     font-weight: 500;
@@ -453,7 +454,8 @@ header .border {
 footer {
     display: flex;
     background: #121111;
-    height: 100px;
+    /* height: 100px; */
+    padding: 10px;
     align-items: center;
 }
 .social {
@@ -483,7 +485,15 @@ footer {
         display: none;
     }
 }
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    footer .social{
+        margin-left: 70px;
+    }
+
+    footer .phone{
+        margin-right: 70px;
+    }
+}
 
 @media (max-width: 1024px) {
     header a {
@@ -506,6 +516,19 @@ footer {
 
     .usefull .usefull-content {
         width: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .social{
+        margin: 10px;
+    }
+
+    footer .phone{
+        margin: 10px;
     }
 }
 
