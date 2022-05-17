@@ -30,6 +30,7 @@ header .logo {
 header ul {
     display: flex;
     list-style: none;
+    margin-right: 50px;
 }
 
 header ul li {
@@ -40,14 +41,34 @@ header a {
     color: white;
     text-decoration: none;
 }
-
-header button {
+.header-burger {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    padding-bottom: 10px;
+    top: 60px;
+    background-color: #121111;
+    width: 100%;
+}
+.header-burger--active{
+    display: flex;
+}
+.header-burger ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.header-burger ul li {
+    margin-top: 10px;
+}
+header .burger-btn {
     height: 40px;
     width: 40px;
     background-color: #121111;
     color: white;
     border: none;
     margin-right: 20px;
+    display: none;
 }
 
 header ion-icon {
@@ -512,6 +533,9 @@ footer {
     header a {
         font-size: 0.8rem;
     }
+    .header-burger ul li a {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -522,7 +546,12 @@ footer {
     header ul {
         display: none;
     }
-
+    header .burger-btn {
+        display: block;
+    }
+    .header-burger ul li a {
+        font-size: 1.5rem;
+    }
     .usefull-box .item {
         margin: 15px;
     }
@@ -556,6 +585,9 @@ footer {
 }
 
 @media(max-width: 700px){
+    .header-burger ul li a {
+        font-size: 1.5rem;
+    }
     .projects-btn span{
         font-size: 2.7rem;
     }
@@ -583,7 +615,9 @@ footer {
     * {
         font-size: 12px;
     }
-
+    .header-burger ul li a {
+        font-size: 1.5rem;
+    }
     .usefull {
         margin: 19px 3px;
     }
