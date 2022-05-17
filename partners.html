@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/partners.css">
+    <title>Партнеры</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
+        <ul>
+            <li><a href="#">Абитуриентам</a></li>
+            <li><a href="#">Студентам</a></li>
+            <li><a href="#">Аспирантам</a></li>
+            <li><a href="#">Выпускникам</a></li>
+            <li><a href="#">Работникам</a></li>
+            <li><a href="#">Партнерам</a></li>
+        </ul>
+        <button class="burger-btn" onclick="burgerEvent()" id="burger-button">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="header-burger" id="burger">
+            <ul>
+                <li><a href="#">Абитуриентам</a></li>
+                <li><a href="#">Студентам</a></li>
+                <li><a href="#">Аспирантам</a></li>
+                <li><a href="#">Выпускникам</a></li>
+                <li><a href="#">Работникам</a></li>
+                <li><a href="#">Партнерам</a></li>
+            </ul>
+        </div>
+        <div class="border"></div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2 class="hero-title">В качестве партнёра нашего института вы можете:</h2>
+            <ul class="hero-options">
+                <li class="hero-option">1. Участвовать в новейших технологических проектах, которые задают направления развития бизнеса и мира.</li>
+                <li class="hero-option">2. Предложить на решение молодым специалистам кейсы и конкурсы на основе ваших бизнес-процесов.</li>
+                <li class="hero-option">3. Инвестировать в развитие узкопрофильных кадров заточенных на решение конкретных бизнес-задач.</li>
+                <li class="hero-option">4. Спонсировать развитие студенческой среди.</li>
+            </ul>
+        
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-ball.png">
+        </div>
+        <a class="hero-link" href="#contact-form">Оставить заявку</a>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="contact-title">
+            Оставить заявку
+        </h2>
+        <form action="" class="form">
+            <input required type="text" placeholder="Ваше имя" class="form-input" required maxlength="20">
+            <input required type="text" placeholder="Ваша компания" class="form-input" required maxlength="25">
+            <input required type="email" placeholder="Ваша компания" class="form-input" required maxlength="25">
+            <textarea required placeholder="Сообщение" id="" cols="30" rows="1" class="form-input"></textarea>
+            <button class="form-button">Отправить</button>
+        </form>
+    </section>
+
+
+
+
+    <footer>
+        <div class="social">
+            <ion-icon name="logo-vk"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+        <div class="phone">
+            <span>Контакты: 8XXXXXXXXXX</span>
+        </div>
+    </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="burger.js"></script>
+<script src="autosize.js"></script>
+<script>
+    const textarea = document.querySelector("textarea");
+    textarea.addEventListener("keyup", e => {
+        let scHeight = e.target.scrollHeight;
+        textarea.style.height = "54px"
+        textarea.style.height = `${scHeight}px`
+    })
+</script>
+</html>

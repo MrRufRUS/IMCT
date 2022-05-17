@@ -1,0 +1,221 @@
+.hero {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero-text {
+    color: #000;
+    max-width: 800px;
+    margin-left: 150px;
+}
+.hero-title {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;    
+}
+.hero-options {
+    list-style-type: none;
+    margin-top: 50px;
+}
+.hero-option {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    
+}
+.hero-option + .hero-option{
+    margin-top: 15px;
+}
+.hero-image {
+    position: absolute;
+    height: 724px;
+    right: 0;
+}
+.hero-link {
+    margin-left: auto;
+    margin-right: 200px;
+    margin-top: 66px;
+    padding: 30px 65px;
+    color: white;
+    background-color: #FFA800;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-decoration: none;
+    border-radius: 70px;
+    z-index: 5;
+}
+.contact-form {
+    background-color: #121111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.contact-title {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    margin-top: 70px;
+}
+.form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-items: center;
+}
+.form-input {
+    background-color: #121111;
+    width: 800px;
+    margin-top: 25px;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    resize: none;
+    padding: 10px 14px;
+    border-bottom: #FFFFFF solid 2px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    min-height: 54px;
+}
+.form-input::placeholder{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.form-button {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    padding: 10px 35px;
+    border: #FFFFFF solid 2px;
+    border-radius: 50px;
+    width: 227px;
+    display: block;
+    margin-top: 45px;
+    transition: .4s;
+}
+.form-button:hover{
+    color: #121111;
+    background: white;
+    transition: color .5s backgtound .5s;
+}
+
+@media (max-width: 1024px) {
+    .hero-text {
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .hero-title{
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .hero-option{
+       font-size: 16px;
+    }
+    .hero-link {
+        margin-right: auto;
+    }
+    .hero-link {
+        margin-left: auto;
+        margin-top: 45px;
+        padding: 20px 40px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .form {
+        width: auto;
+    }
+    .form-input {
+        min-width: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero-options {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .hero-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .hero-option {
+        font-size: 12px;
+    }
+    .hero-link {
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .contact-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .form-input {
+        background-color: #121111;
+        width: 310px;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .form-input::placeholder{
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        
+        
+        color: #FFFFFF;
+    }
+    .form-button {
+        font-size: 16px;
+        line-height: 24px;
+        width: 160px;
+    }
+}
