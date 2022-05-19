@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/applicants.css">
+    <title>Абитуриентам</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
+        <ul>
+            <li><a href="applicants.html">Абитуриентам</a></li>
+            <li><a href="#">Студентам</a></li>
+            <li><a href="#">Аспирантам</a></li>
+            <li><a href="#">Выпускникам</a></li>
+            <li><a href="#">Работникам</a></li>
+            <li><a href="partners.html">Партнерам</a></li>
+        </ul>
+        <button class="burger-btn" onclick="burgerEvent()" id="burger-button">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="header-burger" id="burger">
+            <ul>
+                <li><a href="applicants.html">Абитуриентам</a></li>
+                <li><a href="#">Студентам</a></li>
+                <li><a href="#">Аспирантам</a></li>
+                <li><a href="#">Выпускникам</a></li>
+                <li><a href="#">Работникам</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+            </ul>
+        </div>
+        <div class="border"></div>
+    </header>
+    <section class="hero">
+        <h2 class="hero-title">Что мы изучаем:</h2>
+        <div class="hero-grid">
+            <p class="hero-child">Виртуальные машины</p>
+            <p class="hero-child">Машинное обучение</p>
+            <p class="hero-child">Программирование</p>
+            <p class="hero-child">Интернет вещей</p>
+            <p class="hero-child">Защита информации</p>
+            <p class="hero-child">Цифровое искусство</p>
+            <p class="hero-child">Big Data</p>
+            <p class="hero-child">Алгоритмы</p>
+            <p class="hero-child">Дизайн</p>
+            <p class="hero-child">Матмодели</p>
+            <p class="hero-child">Сетевая экономика</p>
+            <p class="hero-child">Суперкомпьютеры</p>
+            <p class="hero-child">VR/AR</p>
+            <p class="hero-child">Нейросети</p>
+            <p class="hero-child">Криптография</p>
+            <p class="hero-child">Интерфейсы</p>
+            <p class="hero-child">Веб-разработка</p>
+            <p class="hero-child">Анализ данных</p>
+        </div>
+    </section>
+    <section class="educational-prorams">
+        <h1 class="edu-title">Образовательные программы</h1>
+        <h2 class="edu-subtitle">Бакалавриат</h2>
+        <h2 class="edu-exams">Математика (профиль),<br> информатика, русский язык</h2>
+        <div class="edu-parent">
+            <div class="edu-child">
+                <div class="edu-head">
+                    <div class="edu-nameblock">
+                        <h3 class="edu-name">Прикладная информатика в управлении</h3>
+                        <h4 class="edu-subname">09.03.03 Прикладная информатика</h4>
+                    </div>
+                    <p class="edu-places"><span>50</span>бюджетных мест</p>
+                    <p class="edu-exam-point"><span>201</span>проходной балл в 2021</p>
+                </div>
+                <div class="edu-child-content">
+                    <div class="edu-info">
+                        <ul class="subjects">
+                            <li class="subject">Математика (профиль) от 39</li>
+                            <li class="subject">Информатика от 44</li>
+                            <li class="subject">Русский язык от 40</li>
+                        </ul>
+                        <p class="edu-price">На платном<br>210 000 р. в год</p>
+                        <p class="edu-army">Есть военная<br>кафедра</p>
+                        <p class="edu-years">Учиться<br>4 года</p>
+                    </div>
+                    <div class="edu-text">
+                        <p class="description">Программа ориентирована на подготовку специалистов в области проектирования, создания, администрирования, эксплуатации и сопровождения автоматизированных информационных систем, используемых для автоматизации деятельности предприятий и организаций различных организационно-правовых форм.<br>
+                            Целью программы является воспитание грамотных IT-специалистов, умеющих решать прикладные задачи широкого спектра — например, построения веб-сервисов, задач анализа данных, управления программными проектами и процессами их разработки
+                        </p>
+                        <h4>Будешь изучать</h4>
+                        <ul>
+                            <li>Информатика и основы программирования
+                            </li>
+                            <li>Объектно-ориентированное программирование
+                            </li>
+                            <li>Проектирование ИС
+                            </li>
+                            <li>Базы данных
+                            </li>
+                            <li>Теоретические основы и технология обработки больших данных
+                            </li>
+                            <li>Корпоративные информационные системы
+                            </li>
+                            <li>Информационные технологии в управлении финансами
+                            </li>
+                        </ul>
+                        <h4>Скилы</h4>
+                        <p class="description">Языки программирования Prolog, PHP, С#, Java, Python, С, С++, SQL<br>
+                            Языки разметки для веб-приложений HTML, Javascript, CSS<br>
+                            Фреймворки 1C Битрикс, Laravel, Ruby on Rails, Drupal<br>
+                            ПО Visual Studio, Visual Paradigm CE, Project Expert, All Fusion Modeler Editor, AllFusion ERwin Data Modeler, Microsoft Office, 1C Бухгалтерия<br>
+                            ПО СУБД 1C, Oracle, IBM DB2, Rational Rose<br>
+                            ПО Системы моделирования GPSS, ARENA
+                        </p>
+                        <h4>Кем сможешь работать</h4>
+                        <p class="description">
+                            Программа является универсальной, так как готовит специалистов широкого профиля, которые получают фундаментальные знания в области информатики и профессиональные знания в области экономики, менеджмента и маркетинга. Такой специалист может работать и в области информатики, и в области экономики
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="social">
+            <ion-icon name="logo-vk"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+        <div class="phone">
+            <span>Контакты: 8XXXXXXXXXX</span>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="burger.js"></script>
+</body>
+</html>
