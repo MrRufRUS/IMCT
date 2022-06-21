@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .hero .hero-title-wrapper{
-    min-width: 1200px;
+    min-width: 100%;
 }
 
 .hero .hero-title{
@@ -31,9 +33,22 @@
     min-width: 400px;
 }
 
+@media (max-width: 1230px) {
+    .hero{
+        max-width: 800px;
+    }
+    .hero .hero-grid{
+        max-width: 800px;
+    }
+    .hero .hero-child{
+        min-width: 0;
+    }
+}
+
 .educational-programs{
     max-width: 1200px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .edu-title{
