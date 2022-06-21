@@ -1,209 +1,160 @@
-.hero {
-    margin-top: 300px;
-    background: #fff;
-    display: block;
-    padding-left: 225px;
-}
-.hero-title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 63px;
-    
-    color: #000000;
-    
-}
-.hero-grid {
-    background: #FFA800;
-    width: 1470px;
-    height: 898px;
-    padding: 72px 220px 100px 150px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    align-content: space-between;
-}
-.hero-child {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #000000;
+.hero{
     display: flex;
-    align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 
-.educational-prorams {
-    margin-top: 290px;
-    padding-left: 225px;
-    margin-bottom: 290px;
+.hero .hero-title-wrapper{
+    min-width: 1200px;
 }
-.edu-title {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 84px;
-    
-    color: #000000;    
-}
-.edu-subtitle {
-    margin-top: 52px;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 63px;
-    
-    color: #000000;
-}
-.edu-exams {
-    margin-top: 52px;
+
+.hero .hero-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 48px;
-    
-    color: #000000;
+    margin-bottom: 20px;
+    color: #000;
 }
-.edu-parent {
-    margin-top: 36px;
+
+.hero .hero-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
 }
-.edu-child {
-    max-width: 1470px;
-}
-.edu-head {
-    display: flex;
+
+.hero .hero-child{
+    padding: 30px 20px;
     background: #FFA800;
-    height: 126px;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 100px;
-    padding-left: 10px;
-}
-.edu-nameblock {
-}
-.edu-name {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 42px;
-    
-    color: #000000;    
-}
-.edu-subname {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
+    min-width: 400px;
 }
-.edu-places {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
-    
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    width: 120px;
-}
-.edu-places span {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
-    
-    color: #FFFFFF;
-}
-.edu-exam-point {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
-    
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    width: 162px;
-}
-.edu-exam-point span {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
-    
-    color: #FFFFFF;
-}
-.edu-child-content {
-}
-.edu-info {
-    display: flex;
-    width: 1200px;
-    justify-content: space-between;
-    margin-top: 52px;
-}
-.subjects {
-    list-style-type: none;
-}
-.subject {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;    
-}
-.edu-price {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
-    
-}
-.edu-army {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
-    
-}
-.edu-years {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
-    
-}
-.edu-text {
-    margin-top: 4px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
-    
-}
-.edu-text h4{
-    margin-top: 32px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;    
-}
-.edu-text ul {
-    margin-top: 32px;
-    list-style-type: none;
 
+.educational-programs{
+    max-width: 1200px;
+    margin: auto;
 }
-.edu-text ul li {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
+
+.edu-title{
+    font-size: 36px;
+    font-weight: 700;
 }
-.description {
-    margin-top: 32px;
-    font-weight: 400;
+
+.educational-programs h2{
+    margin-bottom: 25px;
+}
+
+.edu-subtitle{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.edu-exams{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.program *{
+    font-weight: 500;
+}
+
+.head{
+    background-color: #FFA800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.edu-name{
     font-size: 24px;
-    line-height: 32px;
-    
-    color: #000000;
+    font-weight: 600;
+}
+
+.edu-subname{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.edu-places{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.edu-places span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.edu-exam-point{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.edu-exam-point span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.sub-head{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.sub-head li{
+    list-style: none;
+}
+
+.edu-description{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.edu-description-text{
+    max-width: 800px;
+}
+
+.edu-description-info{
+    position: absolute;
+    right: 0;
+}
+
+.edu-description-info *{
+    color: #FFA800;
+}
+
+.edu-description-info p{
+    margin-bottom: 20px;
+}
+
+.edu-description-info span{
+    font-size: 40px;
+}
+
+.edu-list{
+    margin: 30px 0;
+    max-width: 800px;
+}
+
+.edu-list-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.edu-list ul{
+    list-style: none;
+}
+
+.program-body.hide{
+    height: 0;
+    overflow: hidden;
 }
