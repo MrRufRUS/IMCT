@@ -470,10 +470,8 @@ header .border {
 }
 .partner-logo {
     display: flex;
-    max-width: 150px;
-    max-height: 150px;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
 }
 /* .partner::before {
     content: '';
@@ -713,10 +711,8 @@ footer {
         margin-top: 200px;
     }
     .partner-logo {
-        max-width: 125px;
-        max-height: 125px;
-        width: 100%;
-        height: 100%;
+        width: 125px;
+        height: 125px;
     }
 }
 @media (max-width: 320px) {
