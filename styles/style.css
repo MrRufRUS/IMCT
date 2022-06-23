@@ -533,6 +533,7 @@ footer {
     /* height: 100px; */
     padding: 10px;
     align-items: center;
+    border-top: 2px solid white;
 }
 .social {
     display: flex;
