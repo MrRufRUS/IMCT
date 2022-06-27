@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/normalize.css"> 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>ИМКТ</title>
 
@@ -50,43 +50,45 @@
         </div>
     </section>
     <section class="usefull">
+        <h2>ПОЛЕЗНОЕ</h2>
         <div class="usefull-content">
-            <h2>ПОЛЕЗНОЕ</h2>
+            <div class="usefull-tabs">
+                <div>
+                    <h3 class="active" onclick="selectTab(0)">Абитуриентам</h3>
+                    <h3 onclick="selectTab(1)"">Партнерам</h3>
+                </div>
+                <div>
+                    <h3 onclick="selectTab(2)"">Студентам</h3>
+                    <h3 onclick="selectTab(3)"">ДПО</h3>
+                </div>
+            </div>
             <div class="usefull-box">
-                <div class="row1">
-                    <div class="item">
-                        <h3>Абитуриентам</h3>
-                        <div class="links">
-                            <a href="">Поступление 2022</a>
-                            <a href="">Приемная комиссия</a>
-                            <a href="">Информация по приему</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3>Партнерам</h3>
-                        <div class="links">
-                            <a href="">Наши партнеры</a>
-                            <a href="">Материалы для партнеров</a>
-                            <a href="">Оставить заявку</a>
-                        </div>
+                <div class="item visible">
+                    <div class="links">
+                        <a href="">Поступление 2022</a>
+                        <a href="">Приемная комиссия</a>
+                        <a href="">Информация по приему</a>
                     </div>
                 </div>
-                <div class="row2">
-                    <div class="item">
-                        <h3>Студентам</h3>
-                        <div class="links">
-                            <a href="">Бакалавриат</a>
-                            <a href="">Магистратура</a>
-                            <a href="">Аспирантура</a>
-                        </div>
+                <div class="item">
+                    <div class="links">
+                        <a href="">Наши партнеры</a>
+                        <a href="">Материалы для партнеров</a>
+                        <a href="">Оставить заявку</a>
                     </div>
-                    <div class="item">
-                        <h3>ДПО</h3>
-                        <div class="links">
-                            <a href="">Программы</a>
-                            <a href="">Документы</a>
-                            <a href="">Оставить заявку</a>
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="links">
+                        <a href="">Бакалавриат</a>
+                        <a href="">Магистратура</a>
+                        <a href="">Аспирантура</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="links">
+                        <a href="">Программы</a>
+                        <a href="">Документы</a>
+                        <a href="">Оставить заявку</a>
                     </div>
                 </div>
             </div>
@@ -150,41 +152,41 @@
     <section class="projects">
         <div class="projects-container">
             <h2>Проекты</h2>
-        <div class="projects-box">
-            <div class="projects-small">
-                <div class="project-small-item">
-                    <img src="assets/project0.png" alt="">
-                    <h4>Новый посейдон</h4>
+            <div class="projects-box">
+                <div class="projects-small">
+                    <div class="project-small-item">
+                        <img src="assets/project0.png" alt="">
+                        <h4>Новый посейдон</h4>
+                    </div>
+                    <div class="project-small-item">
+                        <img src="assets/project1.png" alt="">
+                        <h4>Новая система образования</h4>
+                    </div>
+                    <div class="project-small-item">
+                        <img src="assets/project2.png" alt="">
+                        <h4>Вирус-защитник</h4>
+                    </div>
+                    <div class="project-small-item">
+                        <img src="assets/project3.png" alt="">
+                        <h4>Сайт ИМКТ</h4>
+                    </div>
+                    <div class="project-small-item smaller-big">
+                        <img src="assets/project4.png" alt="">
+                        <h4>Робот-уборщик</h4>
+                    </div>
                 </div>
-                <div class="project-small-item">
-                    <img src="assets/project1.png" alt="">
-                    <h4>Новая система образования</h4>
-                </div>
-                <div class="project-small-item">
-                    <img src="assets/project2.png" alt="">
-                    <h4>Вирус-защитник</h4>
-                </div>
-                <div class="project-small-item">
-                    <img src="assets/project3.png" alt="">
-                    <h4>Сайт ИМКТ</h4>
-                </div>
-                <div class="project-small-item smaller-big">
-                    <img src="assets/project4.png" alt="">
-                    <h4>Робот-уборщик</h4>
+                <div class="projects-big">
+                    <img src="assets/project4.png" class="projects-big-img" alt="">
+                    <div class="projects-big-text">
+                        <h3>Робот-уборщик</h3>
+                        <p>Мы разрабатываем робота, спрособного самостоятельно очищать кампус от мусора</p>
+                    </div>
                 </div>
             </div>
-            <div class="projects-big">
-                <img src="assets/project4.png" class="projects-big-img" alt="">
-                <div class="projects-big-text">
-                    <h3>Робот-уборщик</h3>
-                    <p>Мы разрабатываем робота, спрособного самостоятельно очищать кампус от мусора</p>
-                </div>
-            </div>
-        </div>
-        <button class="projects-btn">
-            <span>Смотреть все</span>
-            <ion-icon name="arrow-forward"></ion-icon>
-        </button>
+            <button class="projects-btn">
+                <span>Смотреть все</span>
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
         </div>
     </section>
     <section class="partners">
@@ -193,33 +195,44 @@
             <div class="partners-parent">
                 <div class="partner">
                     <div class="partner-logo">
-                        <img src="assets/farpost.jpg" alt="Farpost" >
+                        <img src="assets/farpost.jpg" alt="Farpost">
                     </div>
                     <h4>Farpost</h4>
-                    <p>Участвуют в развитии актуальных компетенций области информационных технологий у студентов, часть из которых становятся потом сотрудниками компании<br>Постоянный спонсор Проектных школ и других мероприятий ИМКТ, предоставляют стажировки и дипломы</p>
+                    <p>Участвуют в развитии актуальных компетенций области информационных технологий у студентов, часть
+                        из которых становятся потом сотрудниками компании<br>Постоянный спонсор Проектных школ и других
+                        мероприятий ИМКТ, предоставляют стажировки и дипломы</p>
                 </div>
                 <div class="partner">
                     <div class="partner-logo">
-                        <img src="assets/sber-logo.png" alt="Сбер" >
+                        <img src="assets/sber-logo.png" alt="Сбер">
                     </div>
                     <h4>Сбер</h4>
-                    <p>Создали совместную магистерскую программу "Искусственный интеллект и большие данные" в ИМКТ, участвуют в развитии навыков студентов в этих направлениях, предоставляют проекты для дипломных работ и для Проектных школ ИМКТ<br>Спонсор Проектных школ и других мероприятий ИМКТ, предоставляют стажировки и дипломы, заказали проект бронирования переговорных комнат и ведения истории встреч с клиентами</p>
+                    <p>Создали совместную магистерскую программу "Искусственный интеллект и большие данные" в ИМКТ,
+                        участвуют в развитии навыков студентов в этих направлениях, предоставляют проекты для дипломных
+                        работ и для Проектных школ ИМКТ<br>Спонсор Проектных школ и других мероприятий ИМКТ,
+                        предоставляют стажировки и дипломы, заказали проект бронирования переговорных комнат и ведения
+                        истории встреч с клиентами</p>
                 </div>
                 <div class="partner">
                     <div class="partner-logo">
-                        <img src="assets/rhonda.png" alt="Rhonda" >
+                        <img src="assets/rhonda.png" alt="Rhonda">
                     </div>
                     <h4>Rhonda</h4>
-                    <p>Преподают студентам ИМКТ актуальные знания по системному программированию и программированию встроенных устройств, а также основы компьютерного зрения<br>Постоянный спонсор мероприятий ИМКТ, предоставляют стажировки и дипломы</p>
+                    <p>Преподают студентам ИМКТ актуальные знания по системному программированию и программированию
+                        встроенных устройств, а также основы компьютерного зрения<br>Постоянный спонсор мероприятий
+                        ИМКТ, предоставляют стажировки и дипломы</p>
                 </div>
                 <div class="partner">
                     <div class="partner-logo">
-                        <img src="assets/feip-logo.svg" alt="FEIP" >
+                        <img src="assets/feip-logo.svg" alt="FEIP">
                     </div>
                     <h4>FEIP</h4>
-                    <p>Преподают студентам ИМКТ актуальные знания по веб-программированию и разработке мобильных приложений
+                    <p>Преподают студентам ИМКТ актуальные знания по веб-программированию и разработке мобильных
+                        приложений
                         <br>Предоставляют стажировки и проекты для курсовых и дипломов
-                        <br>Спонсор Проектных школ и других мероприятий ИМКТ, предоставляют стажировки и дипломы, заказали проект бронирования переговорных комнат и ведения истории встреч с клиентами</p>
+                        <br>Спонсор Проектных школ и других мероприятий ИМКТ, предоставляют стажировки и дипломы,
+                        заказали проект бронирования переговорных комнат и ведения истории встреч с клиентами
+                    </p>
                 </div>
             </div>
         </div>
@@ -238,6 +251,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="news.js"></script>
     <script src="burger.js"></script>
+    <script src="tabs.js"></script>
 </body>
 
 </html>
