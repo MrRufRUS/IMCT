@@ -230,7 +230,7 @@ header .border {
     text-decoration: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 512px) {
     .usefull .usefull-tabs h3 {
         border: 5px solid #121111;
         border-radius: 20px;
