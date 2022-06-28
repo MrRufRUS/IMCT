@@ -725,7 +725,12 @@ footer {
     .header-burger ul li a {
         font-size: 1.5rem;
     }
-
+    .usefull h2, .news h2, .projects h2, .partners-container h2 {
+        font-size: 4rem;
+    }
+    .hero h1 {
+        font-size: 8rem;
+    }
     .projects-btn span,
     .news-btn span {
         font-size: 2.7rem;
@@ -806,7 +811,7 @@ footer {
 
     .projects-btn span,
     .news-btn span {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .partner {
