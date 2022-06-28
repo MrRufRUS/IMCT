@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/applicants.css">
+    <link rel="stylesheet" href="styles/students.css">
+    <title>Студентам</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/logo.svg" alt=""></a>
+        <ul>
+            <li><a href="applicants.html">Абитуриентам</a></li>
+            <li><a href="partners.html">Партнерам</a></li>
+            <li><a href="students.html">Студентам</a></li>
+            <li><a href="dpo.html">ДПО</a></li>
+        </ul>
+        <button class="burger-btn" onclick="burgerEvent()" id="burger-button">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="header-burger" id="burger">
+            <ul>
+                <li><a href="applicants.html">Абитуриентам</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="students.html">Студентам</a></li>
+                <li><a href="dpo.html">ДПО</a></li>
+            </ul>
+        </div>
+        <div class="border"></div>
+    </header>
+    <section class="hero">
+        <h2 class="hero-title">Данный раздел сайта находится в разработке.<br>Вся доступная информация для студентов есть в Telegram <a href="https://t.me/imct_bot">боте</a></h2>
+    </section>
+
+    <footer>
+        <div class="social">
+            <ion-icon name="logo-vk"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+        <div class="phone">
+            <span>Контакты: 8XXXXXXXXXX</span>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="burger.js"></script>
+</body>
+</html>

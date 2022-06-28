@@ -1,0 +1,24 @@
+.hero {
+    height: calc(100vh - 152px);
+}
+.hero-title {
+    text-align: center;
+    font-weight: 500 !important;
+    margin-bottom: 0;
+}
+.hero-title a {
+    font-size: 36px;
+    color: black;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .hero {
+        height: calc(100vh - 152px - 81px);
+    }
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    .hero-title a {
+        font-size: 2rem !important;
+    }
+}
